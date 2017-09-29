@@ -535,16 +535,16 @@
                 <legend>Rights</legend>
             </fieldset>
             <ul role="tablist" class="nav nav-tabs">
-                <li role="presentation" class="active">
+                <li role="presentation" >
                     <a href="#roles" data-toggle="tab"><i class="fa fa-cube"></i>Roles </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#individual-rights" data-toggle="tab"><i class="fa fa-hdd-o"></i>Individual rights</a>
                 </li>
             </ul>
             <div class="tab-content">
 
-              <div id="roles" class="tab-pane active">
+              <div id="roles" class="tab-pane">
                   <div style="display:inline-block;font-size:22px;">
                       <span class="label label-default">Set rights as</span>
                   </div>
@@ -559,10 +559,13 @@
                   </div>
               </div>
 
-              <div id="individual-rights" class="tab-pane">
+              <div id="individual-rights" class="tab-pane active">
                 <ul role="tablist" class="nav nav-tabs">
     <li role="presentation" class="active">
         <a href="#clients" data-toggle="tab">Clients </a>
+    </li>
+       <li>
+        <a href="##clientlog" data-toggle="tab">Client Log</a>
     </li>
     <li>
         <a href="#employees" data-toggle="tab">Employees</a>
@@ -591,10 +594,11 @@
     <li>
         <a href="#other" data-toggle="tab">Other</a>
     </li>
+    
 </ul>
 <div class="tab-content">
-    <div id="clients" class="tab-pane active">
-        <section style="z-index:400;max-height: 255px;padding-left: 15px;padding-right: 15px;padding-bottom: 15px;overflow: scroll;">
+	 <div id="clients" class="tab-pane active">
+	<section style="z-index:400;max-height: 255px;padding-left: 15px;padding-right: 15px;padding-bottom: 15px;overflow: scroll;">
   <section>
       <div class="container">
           <div class="row">
@@ -830,7 +834,10 @@
           </div>
       </div>
   </section>
-  <section>
+  </section>
+	 </div>
+    <div id="clientlog" class="tab-pane">
+        <sectio>
       <h7>
           Client Log:
       </h7>
@@ -1008,44 +1015,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>Create report Database: </p>
-            </div>
-            <div class="col-md-6">
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> YES
-                    </label>
-                </div>
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> NO
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>Import Report Database: </p>
-            </div>
-            <div class="col-md-6">
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> YES
-                    </label>
-                </div>
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> NO
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 </section>
 
     </div>
@@ -1959,44 +1929,7 @@
     </div>
     <div id="synch" class="tab-pane">
       <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>Import from QB: </p>
-            </div>
-            <div class="col-md-6">
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> YES
-                    </label>
-                </div>
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> NO
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <p>Export to QB: </p>
-            </div>
-            <div class="col-md-6">
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> YES
-                    </label>
-                </div>
-                <div class="form-check" style="display:inline-block;">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked> NO
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <div class="container">
         <div class="row">
             <div class="col-md-6">
