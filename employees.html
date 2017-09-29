@@ -13,7 +13,6 @@
     <link href="assets/css/tps-bootstrap-dashboard.css" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css">
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
@@ -21,6 +20,7 @@
     <!--     Tooltip Menu     -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
+
   <body class="sidebar-mini">
     <div class="wrapper">
       <div class="sidebar" data-color="blue">
@@ -211,7 +211,7 @@
         <!-- billing paragraphs -->
         <ul role="tablist" class="nav nav-tabs">
           <li role="presentation" class="active">
-            <a href="#personal" data-toggle="tab"><i class="fa fa-user" rel="tooltip" data-placement="top" data-original-title="General"></i></a>
+            <a href="#personal" data-toggle="tab"><i class="fa fa-user" rel="tooltip" data-placement="top" data-original-title="Personal"></i></a>
           </li>
           <li>
             <a href="#general" data-toggle="tab"><i class="fa fa-align-left" rel="tooltip" data-placement="top" data-original-title="General"></i></a>
@@ -316,6 +316,13 @@
                 <option value="ms">202</option>
             </select>
 
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <div class="col-md-offset-10">
+            <button class="btn btn-default" type="submit">Update profile</button>
         </div>
     </div>
 
@@ -488,9 +495,7 @@
       </div>
     </div>
 
-    <div class="form-group">
 
-    </div>
 
 </form>
 
@@ -2504,6 +2509,12 @@
               <div id="courses" class="tab-pane">
                 <div class="col-md-12">
     <div class="container-fluid">
+      <div style="padding-top: 15px;padding-right: 5px;display: inline-block;float: right;">
+          <a rel="tooltip" data-placement="bottom" title="Add Contact" href="#menu-toggle" id="toggle-close"
+          class="button right">
+              <i class="fa fa-user-plus"></i>
+          </a>
+      </div>
         <form method="get" action="/" class="form-horizontal">
             <fieldset>
                 <legend>Courses</legend>
@@ -2524,7 +2535,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>
 
@@ -2544,7 +2555,26 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
+                                      <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
+                                  </div>
+                                </td>
+                                <td>Andrew Mike</td>
+                                <td>Panama</td>
+                                <td>2</td>
+                                <td class="text-right">306-99225</td>
+                                <td class="td-actions text-right">
+                                    <button type="button" rel="tooltip" title="" class="btn btn-success btn-simple btn-xs" data-original-title="Edit Profile">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2562,7 +2592,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2580,44 +2610,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
-                                      <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
-                                  </div>                                </td>
-                                <td>Andrew Mike</td>
-                                <td>Panama</td>
-                                <td>2</td>
-                                <td class="text-right">306-99225</td>
-                                <td class="td-actions text-right">
-                                    <button type="button" rel="tooltip" title="" class="btn btn-success btn-simple btn-xs" data-original-title="Edit Profile">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                  <div class="col-md-offset-1 col-md-10">
-                                      <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
-                                  </div>                                </td>
-                                <td>Andrew Mike</td>
-                                <td>Panama</td>
-                                <td>2</td>
-                                <td class="text-right">306-99225</td>
-                                <td class="td-actions text-right">
-
-                                    <button type="button" rel="tooltip" title="" class="btn btn-success btn-simple btn-xs" data-original-title="Edit Profile">
-                                        <i class="fa fa-edit"></i>
-                                    </button>
-                                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2636,7 +2629,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2655,7 +2648,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2674,7 +2667,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2693,7 +2686,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2712,7 +2705,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2731,7 +2724,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2750,7 +2743,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>                                </td>
                                 <td>Andrew Mike</td>
@@ -2769,7 +2762,26 @@
                             </tr>
                             <tr>
                                 <td>
-                                  <div class="col-md-offset-1 col-md-10">
+                                  <div class="col-md-offset-3 col-md-7">
+                                      <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
+                                  </div>                                </td>
+                                <td>Andrew Mike</td>
+                                <td>Panama</td>
+                                <td>2</td>
+                                <td class="text-right">306-99225</td>
+                                <td class="td-actions text-right">
+
+                                    <button type="button" rel="tooltip" title="" class="btn btn-success btn-simple btn-xs" data-original-title="Edit Profile">
+                                        <i class="fa fa-edit"></i>
+                                    </button>
+                                    <button type="button" rel="tooltip" title="" class="btn btn-danger btn-simple btn-xs" data-original-title="Remove">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  <div class="col-md-offset-3 col-md-7">
                                       <input type="text" class="form-control datepicker" placeholder="City" value="01/01/03">
                                   </div>
                                 </td>

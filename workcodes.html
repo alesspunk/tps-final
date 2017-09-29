@@ -1,798 +1,721 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-	<title>TPS Software</title>
-
-	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>TPS Software</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
-
-
     <!-- Bootstrap core CSS     -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-
     <!--  Light Bootstrap Dashboard core CSS    -->
-    <link href="assets/css/tps-bootstrap-dashboard.css" rel="stylesheet"/>
-
+    <link href="assets/css/tps-bootstrap-dashboard.css" rel="stylesheet" />
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
-
-
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="assets/css/default.css" />
-
-
-
+    <!--     Tooltip Menu     -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 </head>
-<body class="sidebar-mini">
-	
-<!-- <div class="intro">
-TPS SOFTWARE
-</div>-->
-<div class="wrapper">
-	
-    <div class="sidebar" data-color="blue">
-    
-<!--
-    <div class="logo">
-          <a href="#menu-toggle" id="quick-bill" >  
-<button  style="-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;background: #F0AD4E;border-radius: 100px;width: 130px;height: 45px;line-height: 40px;text-align: center;color: white;font-size: 16px;margin-left: 20px;margin-top: 15px;border: none;"><i class="fa fa-edit"></i>&nbsp;Quick Bill</button>
 
- </a>
-            
-            
+  <body class="sidebar-mini">
+    <div class="wrapper">
+      <div class="sidebar" data-color="blue">
+  <div class="sidebar-wrapper">
+    <div class="navbar-minimize">
+      <button class="btn2 btn-fill2">
+                <a class="visible-on-sidebar-regular" style="display:inline-block;background:#F0AD4E;background: #F0AD4E;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 100px;width: 130px;height: 45px;line-height: 45px;text-align: center;color: white;font-size: 16px;margin-top: 5px;margin-left:15px;border: none;" href="#menu-toggle" id="quick-bill">  <i class="fa fa-edit visible-on-sidebar-regular"></i>&nbsp;New Client</a>
+                <a rel="tooltip" data-placement="right" title="Quick Bill" class="visible-on-sidebar-mini" style="display:block;background:#F0AD4E;background: #F0AD4E;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;width: 45px;height: 45px;line-height: 45px;text-align: center;color: white;font-size: 16px;margin-top: 5px;border: none;" href="#detail-bill" id="quick-bill-mini"> <i class="fa fa-edit visible-on-sidebar-mini"></i></a>
+            </button>
+    </div>
+    <ul class="nav">
+      <li class="active">
+        <a href="clients.html" rel="tooltip" data-placement="right" title="Clients">
+                <i class="pe-7s-user"></i>
+                <p>Clients</p>
+            </a>
+      </li>
+      <li>
+        <a href="#" rel="tooltip" data-placement="right" title="Timing">
+                <i class="pe-7s-clock"></i>
+                <p>Timing</p>
+            </a>
+      </li>
+      <li>
+        <a href="workcodes.html" rel="tooltip" data-placement="right" title="Work Codes">
+                <i class="pe-7s-tools"></i>
+                <p>Work Codes</p>
+            </a>
+      </li>
+      <li>
+        <a href="employees.html" rel="tooltip" data-placement="right" title="Employees">
+                <i class="pe-7s-portfolio"></i>
+                <p>Employees</p>
+            </a>
+      </li>
+      <li>
+        <a href="index.html" rel="tooltip" data-placement="right" title="Billing">
+                <i class="pe-7s-news-paper"></i>
+                <p>Billing
+
+                </p>
+            </a>
+      </li>
+      </li>
+      <li>
+        <a data-toggle="collapse" href="#componentsExamples">
+                <i class="pe-7s-more"></i>
+                <p>More<b class="caret"></b></p>
+            </a>
+        <div class="collapse" id="componentsExamples">
+          <ul class="nav">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
         </div>
-		<div class="logo logo-mini">
-		 <a href="#menu-toggle" id="quick-bill-mini" > 
-			 
-			 <button style="-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;-o-transition: all 0.5s ease;transition: all 0.5s ease;background: #F0AD4E;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;width: 45px;height: 45px;line-height: 40px;text-align: center;color: white;font-size: 16px;margin-left: 20px;margin-top: 15px;border: none;"><i class="fa fa-edit"></i></button>
-		 </a>
-		</div>-->
- 
-    	<div class="sidebar-wrapper">
+      </li>
+    </ul>
+    <div class="user">
+      <div class="photo">
+        <img src="assets/img/default-avatar.png" />
+      </div>
+      <div class="info">
+        <a data-toggle="collapse" href="#collapseExample" class="collapsed">
+                Tania Andrew
+                <b class="caret"></b>
+            </a>
+        <div class="collapse" id="collapseExample">
+          <ul class="nav">
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Edit Profile</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
- <div class="navbar-minimize">
-					<button class="btn2 btn-fill2">
-						 <a class="visible-on-sidebar-regular" style="display:inline-block;background:#F0AD4E;background: #F0AD4E;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 100px;width: 130px;height: 45px;line-height: 45px;text-align: center;color: white;font-size: 16px;margin-top: 5px;margin-left:15px;border: none;" href="#menu-toggle" id="quick-bill">  <i class="fa fa-edit visible-on-sidebar-regular"></i>&nbsp;Edit Code</a>
-						<a rel="tooltip" data-placement="right"  title="Edit Code"  class="visible-on-sidebar-mini" style="display:block;background:#F0AD4E;background: #F0AD4E;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;width: 45px;height: 45px;line-height: 45px;text-align: center;color: white;font-size: 16px;margin-top: 5px;border: none;" href="#menu-toggle" id="quick-bill-mini"> <i class="fa fa-edit visible-on-sidebar-mini"></i></a>
-					</button>
-				</div>
-            
-            <ul class="nav">
-         
-                                   <li>
-                    <a href="clients.html" rel="tooltip" data-placement="right"  title="Clients" >
-                        <i class="pe-7s-user"></i>
-                        <p>Clients</p>
-                    </a>
-                </li>
-                 <li>
-                    <a href="#" rel="tooltip" data-placement="right"  title="Timing" >
-                        <i class="pe-7s-clock"></i>
-                        <p>Timing</p>
-                    </a>
-                </li>
-                                   <li >
-                    <a href="workcodes.html" rel="tooltip" data-placement="right"  title="Work Codes">
-                        <i class="pe-7s-tools"></i>
-                        <p>Work Codes</p>
-                    </a>
-                </li>
-  <li>
-                    <a href="employees.html" rel="tooltip" data-placement="right"  title="Employees" >
-                        <i class="pe-7s-portfolio"></i>
-                        <p>Employees</p>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="index.html" rel="tooltip" data-placement="right"  title="Billing"  >
-                        <i class="pe-7s-news-paper"></i>
-                        <p>Billing
-                          
-                        </p>
-                    </a>
-                
-                </li>
-                   </li>
-  <li>
-                    <a data-toggle="collapse" href="#componentsExamples">
-                        <i class="pe-7s-more"></i>
-                        <p>More<b class="caret"></b></p>
-                    </a>
-                        <div class="collapse" id="componentsExamples">
-                        <ul class="nav">
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                        </ul>
-                    </div>
-                </li>
-
-            </ul>
-            
-            <div class="user">
-                <div class="photo">
-                    <img src="assets/img/default-avatar.png" />
-                </div>
-                <div class="info">
-                    <a data-toggle="collapse" href="#collapseExample" class="collapsed">
-                        Tania Andrew
+      <nav class="navbar navbar-default navbar-fixed">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+      <a href="index.html"><img src="assets/img/logo-tps.png" style="padding-top: 15px;padding-left: 10px;"></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="notification">5</span>
+                    <p class="hidden-md hidden-lg">
+                        Notifications
                         <b class="caret"></b>
-                    </a>
-                    <div class="collapse" id="collapseExample">
-                        <ul class="nav">
-                            <li><a href="#">My Profile</a></li>
-                            <li><a href="#">Edit Profile</a></li>
-                            <li><a href="#">Settings</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-           
-    	</div>
-    	
-
+                    </p>
+                </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Notification 1</a></li>
+            <li><a href="#">Notification 2</a></li>
+            <li><a href="#">Notification 3</a></li>
+            <li><a href="#">Notification 4</a></li>
+            <li><a href="#">Another notification</a></li>
+          </ul>
+        </li>
+        <li class="dropdown dropdown-with-icons">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-ellipsis-v"></i>
+                    <p class="hidden-md hidden-lg">
+                        Settings
+                        <b class="caret"></b>
+                    </p>
+                </a>
+          <ul class="dropdown-menu dropdown-with-icons">
+            <li>
+              <a href="#">
+                            <i class="pe-7s-mail"></i> Messages
+                        </a>
+            </li>
+            <li>
+              <a href="#">
+                            <i class="pe-7s-help1"></i> Help Center
+                        </a>
+            </li>
+            <li>
+              <a href="#">
+                            <i class="pe-7s-tools"></i> Settings
+                        </a>
+            </li>
+            <li class="divider"></li>
+            <li>
+              <a href="#">
+                            <i class="pe-7s-lock"></i> Lock Screen
+                        </a>
+            </li>
+            <li>
+              <a href="#" class="text-danger">
+                            <i class="pe-7s-close-circle"></i>
+                            Log out
+                        </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
-    
-    <nav class="navbar navbar-default navbar-fixed">
-		<div class="container-fluid">
-			
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-									</button>
-				<a href="index.html"><img src="assets/img/logo-tps.png" style="padding-top: 15px;padding-left: 10px;"></a>
+  </div>
+</nav>
 
-			</div>
-			<div class="collapse navbar-collapse">
-
-				
-
-				<ul class="nav navbar-nav navbar-right">
-					
-					
-
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="fa fa-bell-o"></i>
-							<span class="notification">5</span>
-							<p class="hidden-md hidden-lg">
-								Notifications
-								<b class="caret"></b>
-							</p>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Notification 1</a></li>
-							<li><a href="#">Notification 2</a></li>
-							<li><a href="#">Notification 3</a></li>
-							<li><a href="#">Notification 4</a></li>
-							<li><a href="#">Another notification</a></li>
-						</ul>
-					</li>
-
-					<li class="dropdown dropdown-with-icons">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="fa fa-ellipsis-v"></i>
-							<p class="hidden-md hidden-lg">
-								Settings
-								<b class="caret"></b>
-							</p>
-						</a>
-						<ul class="dropdown-menu dropdown-with-icons">
-							<li>
-								<a href="#">
-									<i class="pe-7s-mail"></i> Messages
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="pe-7s-help1"></i> Help Center
-								</a>
-							</li>
-							<li>
-								<a href="#">
-									<i class="pe-7s-tools"></i> Settings
-								</a>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href="#">
-									<i class="pe-7s-lock"></i> Lock Screen
-								</a>
-							</li>
-							<li>
-								<a href="#" class="text-danger">
-									<i class="pe-7s-close-circle"></i>
-									Log out
-								</a>
-							</li>
-						</ul>
-					</li>
-
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-
-
-    <div class="main-panel">
-       
-
+      <div class="main-panel">
         <div class="content">
-            <div class="container-fluid" style="padding: 0px;">
-
-
-               <div id="wrapper" >
-        <div id="sidebar-wrapper" style="background-color:white">
-	 
-	 
-						
-          <div class="nav-container" style="margin-left: -25px;">
-                           
-                             <div style="padding-top: 15px;padding-right: 5px;display: inline-block;float: right;">
-
-							 		<a rel="tooltip" data-placement="bottom"  title="Close" href="#menu-toggle" id="toggle-close" class="button-close right">
-							 			<i class="fa fa-close"></i>
-							 		</a>
-	 						</div> 
-	 	
-                        </div> <!-- nav container -->              
-                        
-	 
-<br><br>
-	
-
-   <div class="tab-content">  <!-- tab content -->
-	   
-	   	 <!-- tab 1 -->
-        <div class="tab-pane active" id="quickbill" style="padding-left: 15px;padding-right: 15px;">
-	        
-                      
-   <div class="col-md-12">
+          <div class="container-fluid" style="padding: 0px;">
+  <div id="wrapper">
+    <div id="sidebar-wrapper" style="background-color:white;" id="resizable">
+      <div id="contenido" style="z-index: 1000;"> </div>
+      <div class="tab-content">
+        <!-- tab content -->
+        <div id="handle"></div>
+        <!-- tab 1 -->
+        <div class="tab-pane active" id="quickbill" style="padding-left: 10px;padding-right: 10px;">
+          <div class="col-md-12">
             <div class="container-fluid">
-	  
-                                <form method="get" action="/" class="form-horizontal">
-
-								<fieldset>
-		                                 <legend class="title">100     <span class="text-muted">- Auditing</span> </legend>
-                           
-                                
-		                                <div class="col-sm-12">
-                                            <div class="row">
-		                                
-			                                    <div class="col-md-6">
-			                                        
-		                                            <label>ID:</label>
-														<input type="text" placeholder="100" class="form-control">                                      
-												
-		                                        </div>
-		                                        
-		                                        <div class="col-md-6">
-			                                        
-		                                            <label>Name :</label>
-														<input type="text" placeholder="Auditing" class="form-control">                                      
-													
-		                                        </div> 
-		                                        
-		                                        <div class="col-md-12">
-			                                        
-		                                            <label>Description:</label>
-													<textarea class="form-control" placeholder="Bookeeping" rows="3"></textarea>                                     
-													
-		                                        </div>  
-		                                        
-		                                        
-	                                        </div>
-                                        </div> 
-                                    </fieldset>
-									<br>  <br>
-                                    <fieldset>           
-	                                
-
-                                        
-                                            
-                                            <div class="col-sm-12">
-                                                <div class="row">
-	                                                 <h7>OTHER FEATURES</h7><BR><BR>
-                                                   <div class="col-md-12">
-<div class="switch"
-  data-on-label=" TAX 1 "
-  data-off-label=" TAX 1 ">
-  <input type="checkbox"/>
-</div>
-<div class="switch"
-  data-on-label=" TAX 2 "
-  data-off-label=" TAX 2 ">
-  <input type="checkbox"/>
-</div>
-           <div class="switch"
-  data-on-label=" TAX 3 "
-  data-off-label=" TAX 3 ">
-  <input type="checkbox"/>
-</div>
-           <br><br>
-                                                   </div>
-                                                   <div class="col-sm-4">
-	                                                   <label class="radio">
-
-    <input type="radio" name="optionsRadios" data-toggle="radio" id="optionsRadios1" value="option1">
-
-    <i></i>Chargeable
-
-</label>
-
-
-                                                   </div>
-                                                   <div class="col-sm-4">
-	                                                   <label class="radio">
-
-    <input type="radio" name="optionsRadios" data-toggle="radio" id="optionsRadios1" value="option1">
-
-    <i></i>Non-Chargeable
-
-</label>
-
-
-                                                   </div>
-                                                   <div class="col-sm-4">
-	                                                   <label class="radio">
-
-    <input type="radio" name="optionsRadios" data-toggle="radio" id="optionsRadios1" value="option1">
-
-    <i></i>Expense
-
-</label>
-<br><br>
-
-                                                   </div>
-		                                        <div class="col-md-6">
-			                                        
-		                                            <label>Quickbook Item:</label>
-														     <select name="cities" class="selectpicker" data-title="Single Select" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
-  <option value="id">LKAS-01920912</option>
-    <option value="ms">A-0912092</option>
- <option value="ie">LKAS-01920912</option>
-    <option value="ts">A-0912092</option>
-     <option value="kd">LKAS-01920912</option>
-    <option value="cs">A-0912092</option>
-</select>
-                 
-												
-		                                        </div>
-		                                        <div class="col-md-6">
-			                                        
-		                                            <label>Rate Level:</label>
-														<select name="cities" class="selectpicker" data-title="Select" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
-                                                <option value="id">1</option>
-                                                <option value="ms">2</option>
-                                                <option value="ca">3 </option>
-                                                <option value="da">4</option>
-                                                <option value="de">5</option>
-                                            
-                                            </select>                                  
-												
-		                                        </div>
-
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                               	<br>  
-                                </form>
-
-            	</div>
-                  
-
-            </div> <!-- end quick bill -->
-       
-          
-                    
-                    <!-- buttons -->
-            <div class="col-md-12">
-                       <hr>
-                        
-                    <div class="content">
-                        
-                     	<button class="btn btn-round btn-primary btn-fill"><span class="btn-label btn-label-left">
-                            <i class="fa fa-arrow-left"></i>
-                        </span> Prev
-                        </button>
-						<button class="btn btn-round btn-primary btn-fill">Next <span class="btn-label btn-label-right">
-                            <i class="fa fa-arrow-right"></i>
-                        </span>
-                        </button>
-                        <button class="btn btn-round btn-primary btn-fill" onclick="demo.showSwal('success-message')">Save <span class="btn-label btn-label-right">
-                            <i class="fa fa-save"></i>
-                        </span>
-                        </button>
-                        <button class="btn btn-round btn-danger btn-fill" onclick="demo.showSwal('warning-message-and-confirmation')">Trash <span class="btn-label btn-label-right">
-                            <i class="fa fa-trash"></i>
-                        </span>
-                        </button>
-
-                          
-                    </div>
-                        <br><br><br><br>
-            </div>                      
-		 	   <!-- end of buttons -->
-                    
-        </div>  <!-- end of tab 1 -->
-           
-                                    
-    </div>  <!-- end of tab content -->
-                            
-                        
-                            
-	        
-	        
-            <div id="result"></div>
+              <form method="get" action="/" class="form-horizontal">
+                <fieldset>
+                  <legend>New Client</legend>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </div>
-         <div id="header" class="container-fluid" style="padding: 0px;">
-            
-            
-            <div class="navbar">
-	            
-	            
-                  
-             
+        <!-- end of tab 1 -->
+        <!-- tab 2 -->
+        <div class="tab-pane" id="detail-bill" style="padding-left: 15px;padding-right: 15px;">
+  <div class="col-md-12">
+    <div class="container-fluid">
+      <div style="padding-top: 15px;padding-right: 5px;display: inline-block;float: right;">
+        <a rel="tooltip" data-placement="bottom" title="Cancel" href="#menu-toggle" id="toggle-close2" class="button right">
+                <i class="fa fa-close"></i>
+              </a>
+      </div>
+      <form method="get" action="/" class="form-horizontal">
+        <fieldset>
+          <legend>Edit <span class="text-muted"> - Armano</span></legend>
+        </fieldset>
+        <!-- billing paragraphs -->
+        <ul role="tablist" class="nav nav-tabs">
+          <li role="presentation" class="active">
+            <a href="#detail" data-toggle="tab">
+              <i class="fa fa-user" rel="tooltip" data-placement="top" data-original-title="Details 1"></i></a>
+          </li>
 
- <div class="search-box">
-<div class="lighter">
-<form>
-	<span><input type="text" class="search rounded" placeholder="Search"></span>
-	</form>
-</div></div>
-
-			<div class="col-md-12" style="padding: 0px;">
-                       
-
-                            <div class="toolbar">
-                              <h4>&nbsp;&nbsp;<i class="pe-7s-tools"></i>&nbsp;<b>Work Codes</b> </h4>  <!--        Here you can write extra buttons/actions for the toolbar              -->
-                            </div>
-                            
-
-            
-                            
-                            
-<div class="panel-group" id="accordion1">
-            <div class="panel panel-default">
-                <div class="panel-heading" style="padding-left: 30px;">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">100	Auditing - Chg
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse">
-                     <div class="panel-body">
-                         
-                            <div class="panel-group" id="accordion21" style="padding-left: 30px;">
-                                <div class="panel">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseOneOne">101 Audit Inventory - Chg
-                                    </a>
-                                    <div id="collapseOneOne" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 1</div>
-                                    </div>
-                                </div>
-                                <div class="panel ">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseOneTwo">102 Audit Interview - Chg
-                                    </a>
-                                    <div id="collapseOneTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 2</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading" style="padding-left: 30px;">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">200	Review Engagement - Chg
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div class="panel-body">
-             
-                            <div class="panel-group" id="accordion21" style="padding-left: 30px;">
-                                <div class="panel">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseTwoTwo">201	Review Engagement - Chg
-                                    </a>
-                                    <div id="collapseTwoTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 1</div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading" style="padding-left: 30px;">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">300 Notice to Reader - Chg
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse">
-                     <div class="panel-body">
-                           
-                            <div class="panel-group" id="accordion21" style="padding-left: 30px;">
-                                <div class="panel">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseThreeOne">301	Notice to Reader - Chg
-                                    </a>
-                                    <div id="collapseThreeOne" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 1</div>
-                                    </div>
-                                </div>
-                                <div class="panel ">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseThreeTwo">302	Review Wpps - Chg
-                                    </a>
-                                    <div id="collapseThreeTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 2</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-            
-            <div class="panel panel-default">
-                <div class="panel-heading" style="padding-left: 30px;">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">400 Accounting and Bookeeping - Chg
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse">
-                     <div class="panel-body">
-                             
-                            <div class="panel-group" id="accordion21" style="padding-left: 30px;">
-                                <div class="panel">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFourOne">401	Bookeeping - Chg
-                                    </a>
-                                    <div id="collapseFourOne" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 1</div>
-                                    </div>
-                                </div>
-                                <div class="panel ">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFourTwo">402	Payroll - Chg
-                                    </a>
-                                    <div id="collapseFourTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 2</div>
-                                    </div>
-                                </div>
-                                
-                                <div class="panel ">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFourThree">403 Payroll Taxes - Chg
-                                    </a>
-                                    <div id="collapseFourThree" class="panel-collapse collapse">
-                                        <div class="panel-body">Details 2</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-            
-            <div class="panel panel-default">
-                <div class="panel-heading" style="padding-left: 30px;">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion5" href="#collapseFive">500 Tax Compliance - Chg
-                        </a>
-                    </h4>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse">
-                     <div class="panel-body">
-                           
-                            <div class="panel-group" id="accordion21" style="padding-left: 30px;">
-                                <div class="panel">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFiveOne">CTAX Corporate - Chg
-                                    </a>
-                                    <div id="collapseFiveOne" class="panel-collapse collapse">
-                                        <div class="panel-body">505T2 - T2 Corp Tax Preparation - Chg</div>
-                                    </div>
-                                    <div id="collapseFiveOneTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">506T2 - T2 Corp Tax Review - Chg</div>
-                                    </div>
-                                </div>
-                                <div class="panel ">
-                                    <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFiveTwo">ITAX - Individual Tax - Chg
-                                    </a>
-                                    <div id="collapseFiveTwo" class="panel-collapse collapse">
-                                        <div class="panel-body">506T1 - T1 Personal Income - Chg</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-
-        </div>     
-        
-                           
-                    </div> <!-- end col-md-12 -->
-
-        
+        </ul>
+        <div class="tab-content">
+          <div id="detail" class="tab-pane active">
+            <div class="col-md-12">
+  <div class="container-fluid">
+    <form method="get" action="/" class="form-horizontal">
+      <fieldset>
+        <legend class="title">Detail</legend>
+        <div class="content">
+          <form class="form-horizontal">
+    <div class="form-group">
+        <div class="col-md-2">
+            <label>ID</label>
+            <input type="text" class="form-control" placeholder="ID">
+        </div>
+        <div class="col-md-8">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Audit Planning" >
+        </div>
     </div>
+    <div class="form-group">
+      <div class="col-md-12">
+        <label>Description</label>
+        <textarea class="form-control" placeholder="Here can be your nice text" rows="5"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-4">
+        <div class="form-check" style="display:inline-block;">
+          <label class="form-check-label">
+              <input class="form-check-input" type="radio"
+              name="exampleRadios" id="exampleRadios1" value="option1" checked> CHARGEABLE
+          </label>
+          </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-check" style="display:inline-block;">
+            <label class="form-check-label">
+                <input class="form-check-input" type="radio"
+                name="exampleRadios" id="exampleRadios1" value="option1" checked> NON-CHARGEABLE
+            </label>
+            </div>
+        </div>
+
+      <div class="col-md-4">
+          <div class="form-check" style="display:inline-block;">
+            <label class="form-check-label">
+                <input class="form-check-input text-right" type="radio"
+                name="exampleRadios" id="exampleRadios1" value="option1" checked> Expense
+            </label>
+          </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+
+      <div class="col-md-3">
+        <div class="form-check" style="display:inline-block;">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value=""> Tax 1
+            </label>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-check" style="display:inline-block;">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value=""> Tax 1
+            </label>
+        </div>
+      </div>
+      <div class="col-md-3" >
+        <div class="form-check" style="display:inline-block;">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value=""> Tax 1
+            </label>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <label >Rate Level</label>
+        <input  type="text" class="form-control" placeholder="1">
+      </div>
+
+    </div>
+
+    <div class="form-group">
+      <div class="col-md-12">
+        <label >Quickbook Items</label>
+        <input  type="text" class="form-control" placeholder="1">
+      </div>
+    </div>
+
+</form>
+
+        </div>
+      </fieldset>
+    </form>
+    </div>
+  </div>
+  <!-- end quick bill -->
 </div>
-               
 
-</body>
-    <!--   Core JS Files and PerfectScrollbar library inside jquery.ui   -->
-    <script src="assets/js/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="assets/js/toggle.js" type="text/javascript"></script>
+          </div>
+        </div>
+        <!-- end billing paragraphs -->
+      </form>
+    </div>
+  </div>
+</div>
+
+        <!-- end of tab 2 -->
+        <!-- tab 3 -->
+        <div class="tab-pane" id="progress-bill" style="padding-left: 15px;padding-right: 15px;">
+          <div class="col-md-12">
+            <div class="container-fluid">
+              <form method="get" action="/" class="form-horizontal">
+                <fieldset>
+                  <legend>Inquiry</legend>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- end of tab 3 -->
+        <!-- tab 4 -->
+        <div class="tab-pane" id="last-36" style="padding-left: 15px;padding-right: 15px;">
+          <div class="col-md-12">
+            <div class="container-fluid">
+              <form method="get" action="/" class="form-horizontal">
+                <fieldset>
+                  <legend>Client Folder</legend>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- end of tab 4 -->
+        <!-- tab 5 -->
+        <div class="tab-pane" id="b-paragraphs" style="padding-left: 15px;padding-right: 15px;">
+          <fieldset>
+            <div class="col-md-12">
+              <div class="container-fluid">
+                <form method="get" action="/" class="form-horizontal">
+                  <fieldset>
+                    <legend>Client Log</legend>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+        </div>
+        <!-- end of tab 5 -->
+      </div>
+      <!-- end of tab content -->
+      <div id="result"></div>
+    </div>
+
+    <div id="header" class="container-fluid" style="padding: 0px;">
+      <div class="navbar">
+        <div class="search-box">
+          <div class="lighter">
+            <form>
+              <span><input type="text" class="search rounded" placeholder="Search"></span>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-12" style="padding: 0px;">
+          <div class="toolbar">
+            <h4>&nbsp;&nbsp;<i class="pe-7s-tools"></i>&nbsp;<b>Work Codes</b> </h4>
+            <!--        Here you can write extra buttons/actions for the toolbar              -->
+          </div>
+          <div class="panel-group" id="accordion1">
+            <div class="panel panel-default">
+              <div class="panel-heading" style="padding-left: 30px;">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+									100	Auditing - Chg
+                </a>
+            </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="accordion21" style="padding-left: 30px;">
+                    <div class="panel">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseOneOne">
+														101 Audit Inventory - Chg
+                            </a>
+                      <div id="collapseOneOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+
+                          <div class="dropdown">
+                            <div class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+                              <strong>Details 1</strong> <span class="caret"></span>
+                            </div>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#menu-toggle" id="toggle1">New</a></li>
+                              <li role="presentation"><a role="menuitem" tabindex="-1" href="#menu-toggle" id="toggle2">Edit</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel ">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseOneTwo">
+														102 Audit Interview - Chg
+                          </a>
+                      <div id="collapseOneTwo" class="panel-collapse collapse">
+                        <div class="panel-body">Details 2</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" style="padding-left: 30px;">
+
+                <h4 class="panel-title">
+			                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+												200	Review Engagement - Chg
+			                </a>
+            				</h4>
+
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-body">
+                    <div class="panel-group" id="accordion21" style="padding-left: 30px;">
+                      <div class="panel">
+                        <a data-toggle="collapse" data-parent="#accordion21" href="#collapseTwoTwo">
+															201	Review Engagement - Chg
+                            </a>
+                        <div id="collapseTwoTwo" class="panel-collapse collapse">
+                          <div class="panel-body">Details 1</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" style="padding-left: 30px;">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+									300 Notice to Reader - Chg
+                </a>
+            </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="accordion21" style="padding-left: 30px;">
+                    <div class="panel">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseThreeOne">
+														301	Notice to Reader - Chg
+                            </a>
+                      <div id="collapseThreeOne" class="panel-collapse collapse">
+                        <div class="panel-body">Details 1</div>
+                      </div>
+                    </div>
+                    <div class="panel ">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseThreeTwo">
+														302	Review Wpps - Chg
+                            </a>
+                      <div id="collapseThreeTwo" class="panel-collapse collapse">
+                        <div class="panel-body">Details 2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" style="padding-left: 30px;">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion4" href="#collapseFour">
+									400 Accounting and Bookeeping - Chg
+                </a>
+            </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <div class="panel-group" id="accordion21" style="padding-left: 30px;">
+                    <div class="panel">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFourOne">
+														401	Bookeeping - Chg
+                            </a>
+                      <div id="collapseFourOne" class="panel-collapse collapse">
+                        <div class="panel-body">Details 1</div>
+                      </div>
+                    </div>
+                    <div class="panel ">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFourTwo">
+														402	Payroll - Chg
+                            </a>
+                      <div id="collapseFourTwo" class="panel-collapse collapse">
+                        <div class="panel-body">Details 2</div>
+                      </div>
+                    </div>
+                    <div class="panel ">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFourThree">
+														403 Payroll Taxes - Chg
+                            </a>
+                      <div id="collapseFourThree" class="panel-collapse collapse">
+                        <div class="panel-body">Details 2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" style="padding-left: 30px;">
+                <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion5" href="#collapseFive">
+									500 Tax Compliance - Chg
+                </a>
+            </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+
+                  <div class="panel-group" id="accordion21" style="padding-left: 30px;">
+                    <div class="panel">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFiveOne">
+														CTAX Corporate - Chg
+                            </a>
+                      <div id="collapseFiveOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          505T2 - T2 Corp Tax Preparation - Chg
+                        </div>
+                      </div>
+                      <div id="collapseFiveOneTwo" class="panel-collapse collapse">
+                        <div class="panel-body">506T2 - T2 Corp Tax Review - Chg</div>
+                      </div>
+                    </div>
+                    <div class="panel ">
+                      <a data-toggle="collapse" data-parent="#accordion21" href="#collapseFiveTwo">
+														ITAX - Individual Tax - Chg
+                            </a>
+                      <div id="collapseFiveTwo" class="panel-collapse collapse">
+                        <div class="panel-body">506T1 - T1 Personal Income - Chg</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end col-md-12 -->
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+  <!--   Core JS Files and PerfectScrollbar library inside jquery.ui   -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/toggle.js" type="text/javascript"></script>
+<!--  Forms Validations Plugin -->
+<script src="assets/js/jquery.validate.min.js"></script>
+<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
+<script src="assets/js/moment.min.js"></script>
+<!--  Date Time Picker Plugin is included in this js file -->
+<script src="assets/js/bootstrap-datetimepicker.js"></script>
+<!--  Select Picker Plugin -->
+<script src="assets/js/bootstrap-selectpicker.js"></script>
+<!--  Checkbox, Radio, Switch and Tags Input Plugins -->
+<script src="assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
+<!--  Charts Plugin -->
+<script src="assets/js/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="assets/js/bootstrap-notify.js"></script>
+<!-- Sweet Alert 2 plugin -->
+<script src="assets/js/sweetalert2.js"></script>
+<!-- Vector Map plugin -->
+<script src="assets/js/jquery-jvectormap.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!-- Wizard Plugin    -->
+<script src="assets/js/jquery.bootstrap.wizard.min.js"></script>
+<!--  bootstrap Table Plugin    -->
+<script src="assets/js/bootstrap-table.js"></script>
+<!--  Plugin for DataTables.net  -->
+<script src="assets/js/jquery.datatables.js"></script>
+<!--  Full Calendar Plugin    -->
+<script src="assets/js/fullcalendar.min.js"></script>
+<!-- Light Bootstrap Dashboard Core javascript and methods -->
+<script src="assets/js/light-bootstrap-dashboard.js"></script>
+<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
+<script src="assets/js/demo.js"></script>
+<script type="text/javascript">
+var $table = $('#bootstrap-table');
 
 
-	<!--  Forms Validations Plugin -->
-	<script src="assets/js/jquery.validate.min.js"></script>
-
-	<!--  Plugin for Date Time Picker and Full Calendar Plugin-->
-	<script src="assets/js/moment.min.js"></script>
-
-    <!--  Date Time Picker Plugin is included in this js file -->
-
-    <script src="assets/js/bootstrap-datetimepicker.js"></script>
-
-    <!--  Select Picker Plugin -->
-    <script src="assets/js/bootstrap-selectpicker.js"></script>
-
-	<!--  Checkbox, Radio, Switch and Tags Input Plugins -->
-	<script src="assets/js/bootstrap-checkbox-radio-switch-tags.js"></script>
-
-	<!--  Charts Plugin -->
-	<script src="assets/js/chartist.min.js"></script>
-
-    <!--  Notifications Plugin    -->
-    <script src="assets/js/bootstrap-notify.js"></script>
-
-    <!-- Sweet Alert 2 plugin -->
-	<script src="assets/js/sweetalert2.js"></script>
-
-    <!-- Vector Map plugin -->
-	<script src="assets/js/jquery-jvectormap.js"></script>
-
-    <!--  Google Maps Plugin    -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-
-	<!-- Wizard Plugin    -->
-    <script src="assets/js/jquery.bootstrap.wizard.min.js"></script>
-
-    <!--  bootstrap Table Plugin    -->
-    <script src="assets/js/bootstrap-table.js"></script>
-
-	<!--  Plugin for DataTables.net  -->
-    <script src="assets/js/jquery.datatables.js"></script>
-
-
-    <!--  Full Calendar Plugin    -->
-    <script src="assets/js/fullcalendar.min.js"></script>
-
-    <!-- Light Bootstrap Dashboard Core javascript and methods -->
-	<script src="assets/js/light-bootstrap-dashboard.js"></script>
-
-	<!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
-	<script src="assets/js/demo.js"></script>
-	
-	 <script type="text/javascript">
-		 
-	
-		 
-        var $table = $('#bootstrap-table');
-        
-         
 //
-  //      function operateFormatter(value, row, index) {
-    //        return [
-	     //        '<a rel="tooltip" title="Quick Bill" id="menu-toggle" class="btn btn-simple btn-info table-action edit">',
-               //     '<i class="fa fa-edit"></i>',
-              //  '</a>',
-               //  '<a rel="tooltip" title="Detail View" class="btn btn-simple btn-info btn-icon table-action">',
-               //     '<i class="fa fa-search-plus"></i>',
-              //  '</a>',
-                
-              //   '<a rel="tooltip" title="Progress Bill" class="btn btn-simple btn-info table-action">',
-              //      '<i class="fa fa-line-chart"></i>',
-              //  '</a>',
-              //    '<a rel="tooltip" title="Last 36 Months" class="btn btn-simple btn-info btn-icon table-action">',
-               //     '<i class="fa fa-bar-chart"></i>',
-              //  '</a>',
-              //  '<a rel="tooltip" title="Delete" class="btn btn-simple btn-info table-action">',
-              //      '<i class="fa fa-trash"></i>',
-              //  '</a>'
-           // ].join('');
-     //   }
+//      function operateFormatter(value, row, index) {
+//        return [
+//        '<a rel="tooltip" title="Quick Bill" id="menu-toggle" class="btn btn-simple btn-info table-action edit">',
+//     '<i class="fa fa-edit"></i>',
+//  '</a>',
+//  '<a rel="tooltip" title="Detail View" class="btn btn-simple btn-info btn-icon table-action">',
+//     '<i class="fa fa-search-plus"></i>',
+//  '</a>',
 
-        $().ready(function(){
-            window.operateEvents = {
-                'click .view': function (e, value, row, index) {
-                    info = JSON.stringify(row);
+//   '<a rel="tooltip" title="Progress Bill" class="btn btn-simple btn-info table-action">',
+//      '<i class="fa fa-line-chart"></i>',
+//  '</a>',
+//    '<a rel="tooltip" title="Last 36 Months" class="btn btn-simple btn-info btn-icon table-action">',
+//     '<i class="fa fa-bar-chart"></i>',
+//  '</a>',
+//  '<a rel="tooltip" title="Delete" class="btn btn-simple btn-info table-action">',
+//      '<i class="fa fa-trash"></i>',
+//  '</a>'
+// ].join('');
+//   }
 
-                    swal('You click view icon, row: ', info);
-                    console.log(info);
-                },
-                'click .edit': function (e, value, row, index) {
-                     
-                     $("#menu-toggle").click(function(info) {
-					 info.preventDefault();
-					 $("#wrapper").toggleClass("toggled");
-					 });
-            
-                },
-                'click .remove': function (e, value, row, index) {
-                    console.log(row);
-                    $table.bootstrapTable('remove', {
-                        field: 'id',
-                        values: [row.id]
-                    });
-                }
-            };
+$().ready(function() {
+    window.operateEvents = {
+        'click .view': function(e, value, row, index) {
+            info = JSON.stringify(row);
 
-            $table.bootstrapTable({
-                toolbar: ".toolbar",
-                clickToSelect: true,
-                showRefresh: true,
-                search: false,
-                showToggle: true,
-                showColumns: true,
-                pagination: false,
-                searchAlign: 'left',
-                pageSize: 29,
-                clickToSelect: false,
-                pageList: [8,10,25,50,100],
+            swal('You click view icon, row: ', info);
+            console.log(info);
+        },
+        'click .edit': function(e, value, row, index) {
 
-                formatShowingRows: function(pageFrom, pageTo, totalRows){
-                    //do nothing here, we don't want to show the text "showing x of y from..."
-                },
-                formatRecordsPerPage: function(pageNumber){
-                    return pageNumber + " rows visible";
-                },
-                icons: {
-                    refresh: 'fa fa-refresh',
-                    toggle: 'fa fa-th-list',
-                    columns: 'fa fa-columns',
-                    detailOpen: 'fa fa-plus-circle',
-                    detailClose: 'fa fa-minus-circle'
-                }
+            $("#menu-toggle").click(function(info) {
+                info.preventDefault();
+                $("#wrapper").toggleClass("toggled");
             });
 
-            //activate the tooltips after the data table is initialized
-            $('[rel="tooltip"]').tooltip();
-
-            $(window).resize(function () {
-                $table.bootstrapTable('resetView');
+        },
+        'click .remove': function(e, value, row, index) {
+            console.log(row);
+            $table.bootstrapTable('remove', {
+                field: 'id',
+                values: [row.id]
             });
+        }
+    };
+
+    $table.bootstrapTable({
+        toolbar: ".toolbar",
+        clickToSelect: true,
+        showRefresh: true,
+        search: false,
+        showToggle: true,
+        showColumns: true,
+        pagination: false,
+        searchAlign: 'left',
+        pageSize: 29,
+        clickToSelect: false,
+        pageList: [8, 10, 25, 50, 100],
+
+        formatShowingRows: function(pageFrom, pageTo, totalRows) {
+            //do nothing here, we don't want to show the text "showing x of y from..."
+        },
+        formatRecordsPerPage: function(pageNumber) {
+            return pageNumber + " rows visible";
+        },
+        icons: {
+            refresh: 'fa fa-refresh',
+            toggle: 'fa fa-th-list',
+            columns: 'fa fa-columns',
+            detailOpen: 'fa fa-plus-circle',
+            detailClose: 'fa fa-minus-circle'
+        }
+    });
+
+    //activate the tooltips after the data table is initialized
+    $('[rel="tooltip"]').tooltip();
+
+    $(window).resize(function() {
+        $table.bootstrapTable('resetView');
+    });
 
 
-        });
+});
+</script>
+<script type="text/javascript">
+$().ready(function() {
 
-    </script>
+    // Init Sliders
+    demo.initFormExtendedSliders();
 
-      <script type="text/javascript">
-        $().ready(function(){
-
-            // Init Sliders
-            demo.initFormExtendedSliders();
-
-            // Init DatetimePicker
-            demo.initFormExtendedDatetimepickers();
-        });
-    </script>
+    // Init DatetimePicker
+    demo.initFormExtendedDatetimepickers();
+});
+</script>
 
 
 </html>
